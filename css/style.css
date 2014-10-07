@@ -367,9 +367,60 @@ li {
 	width: 46px;
 }
 
+.option i {
+	display: block;	
+	font-size:9px;
+	font-style: normal;
+}
+
+#optionleft i {
+	text-align: left;
+	margin: 6px 0 0 8px !important;
+}
+
+
+#optionleft span {
+	margin: 15px 0 0 8px !important;
+}
+
+#optionright i {
+	text-align: right;
+	margin: 6px 8px 0 0 !important;
+}
+
+#optionright span {
+	margin: 15px 8px 0 0 !important;
+}
+
 .command {
 	width: 67px;
 }
+
+.command i {
+	display: block;	
+	font-size: 14px;
+	font-style: normal;
+}
+
+
+#commandleft i {
+	text-align: right;
+	margin: 6px 8px 0 0 !important;
+}
+
+#commandleft span {
+	margin: 8px 0 0 11px !important;
+}
+
+#commandright i {
+	text-align: left;
+	margin: 6px 0 0 8px !important;
+}
+
+#commandright span {
+	margin: 8px 11px 0 0 !important;
+}
+
 
 #spacebar {
 	width: 226px;
