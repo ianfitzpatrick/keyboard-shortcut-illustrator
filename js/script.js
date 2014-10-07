@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-	$('.options input').click(function (){
+	$('.options-suppress input').click(function (){
 		supressKey = '#keyboard .' + $(this).attr('class');
 		supressCode = this.value;
 
@@ -11,5 +11,14 @@ $(document).ready(function() {
 		}
 	});
 
+
+	stickyKeysEnabled = false;
+	$('#enableStickyKeys').change(function(){
+	    stickyKeysEnabled = this.checked ? 'true' : 'false';
+	});
+
+	$('.options button').click(function (){
+		$('.key').removeClass('keydown');
+	});
 
 });

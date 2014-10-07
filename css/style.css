@@ -519,26 +519,33 @@ ul ol {
 
 .options {
 	width: 700px;
-	text-align: center;
-	margin: 40px auto 0;
+	text-align: left;
+	margin: 40px auto 0 auto;
 	font-size: 10pt;
 	color: #AAA;
 }
 
+.options div {
+	float: left;
+	margin-right: 20px;
+}
+
 .options h2 {
 	margin-bottom: 20px;
-	width: 300px;
-	margin-left: auto;
-	margin-right: auto;
+	width: 400px;
 	border-bottom: solid #E0E0E0 1px;
 	padding-bottom: 10px;
+}
+
+.options h3 {
+	margin: 0 0 4px 0;
+	font-size: 12px;
+	color: #C0C0C0;	
 }
 
 .options p {
 	margin-bottom: 20px;
 	width: 200px;
-	margin-left: auto;
-	margin-right: auto;
 }
 
 .options input {
@@ -546,13 +553,24 @@ ul ol {
 	clear: left;
 	vertical-align: baseline;
 	margin-right: 15px;
-	margin-left: 30px;
 	width: auto !important;
 }
 
 .options label {
 	float: left;
 	margin-right: 40px;
+}
+
+
+.options button {
+	padding: 4px 20px;
+	color: #AAA;
+	margin: 4px 0;
+	font-size: 11px;
+}
+
+.options button:active {
+	color: #fff;
 }
 
 footer {

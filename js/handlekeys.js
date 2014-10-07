@@ -1,24 +1,29 @@
 /* This script by Dustin Hoffman. Caps var changer added by Cameron Little. Scrolling supression added by Ian Fitzpatrick.
 */
-var caps = false;
 
-$(window).keydown(function(e) {
-	key = (e.keyCode) ? e.keyCode : e.which;
+$(document).ready(function() {
 
-	$('.key.c' + key).addClass('keydown');
-	if (key == 20) {
-		caps = (caps) ? false : true;
-	}
-	console.log(key);
-  	return false; // Prevent browser scrolling/shortcuts
+	var caps = false;
 
-});
+	$(window).keydown(function(e) {
+		key = (e.keyCode) ? e.keyCode : e.which;
 
-$(window).keyup(function(e) {
-	key = (e.keyCode) ? e.keyCode : e.which;
+		$('.key.c' + key).addClass('keydown');
+		if (key == 20) {
+			caps = (caps) ? false : true;
+		}
+	  	return false; // Prevent browser scrolling/shortcuts
 
-	$('.key.c' + key).removeClass('keydown');
-	if (key == 20) {
-		caps = (caps) ? false : true;
-	}
+	});
+
+	$(window).keyup(function(e) {
+		if (!stickyKeysEnabled) {
+			key = (e.keyCode) ? e.keyCode : e.which;
+
+			$('.key.c' + key).removeClass('keydown');
+			if (key == 20) {
+				caps = (caps) ? false : true;
+			}
+		}
+	});
 });

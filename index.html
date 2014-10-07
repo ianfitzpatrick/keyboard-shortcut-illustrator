@@ -130,12 +130,25 @@
 	</div>
 
 		<div class="options">
-			<h2>Supress Keys</h2>
-			<p> <input type="checkbox" name="supressLeftShift" id="supressLeftShift" class="shiftleft" value="c16"><label for="supressLeftShift">Left Shift</label>
-				<input type="checkbox" name="supressRightShift" id="supressRightShift" class="shiftright" value="c16"><label for="supressRightShift">Right Shift</label>
-				<input type="checkbox" name="supressLeftOption" id="supressLeftOption" class="leftoption" value="c18"><label for="supressLeftOption">Left Option</label>
-				<input type="checkbox" name="supressRightOption" id="supressRightOption" class="rightoption" value="c18"><label for="supressRightOption">Right Option</label>
-			</p>
+			
+				<h2>Options</h2>
+	
+				<div class="options-suppress">
+				<h3>Suppress Keys</h3>
+					<p><input type="checkbox" name="supressLeftShift" id="supressLeftShift" class="shiftleft" value="c16"><label for="supressLeftShift">Left Shift</label>
+						<input type="checkbox" name="supressRightShift" id="supressRightShift" class="shiftright" value="c16"><label for="supressRightShift">Right Shift</label>
+						<input type="checkbox" name="supressLeftOption" id="supressLeftOption" class="leftoption" value="c18"><label for="supressLeftOption">Left Option</label>
+						<input type="checkbox" name="supressRightOption" id="supressRightOption" class="rightoption" value="c18"><label for="supressRightOption">Right Option</label>
+					</p>
+				</div>
+
+				<div>
+				<h3>Sticky Keys</h3>
+					<p><input type="checkbox" name="enableStickyKeys" id="enableStickyKeys"><label for="enableStickyKeys">Enable Sticky Keys</label>
+					<button type="button">Unstick All Keys</button>
+					</p>
+				</div>
+
 		</div>
 	
 	<footer>
@@ -145,8 +158,8 @@
 
 
 <script>!window.jQuery && document.write(unescape('%3Cscript src="js/libs/jquery-1.4.2.js"%3E%3C/script%3E'))</script>
-<script src="js/handlekeys.js"></script>
 <script src="js/script.js"></script>
+<script src="js/handlekeys.js"></script>
 
 </body>
 </html>
