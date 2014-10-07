@@ -11,12 +11,6 @@ $(document).ready(function() {
 		}
 	});
 
-
-	stickyKeysEnabled = false;
-	$('#enableStickyKeys').change(function(){
-	    stickyKeysEnabled = this.checked ? 'true' : 'false';
-	});
-
 	$('.options button').click(function (){
 		$('.key').removeClass('keydown');
 	});

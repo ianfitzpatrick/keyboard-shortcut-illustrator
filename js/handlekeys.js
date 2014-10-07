@@ -1,7 +1,6 @@
 /* This script by Dustin Hoffman. Caps var changer added by Cameron Little. Scrolling supression added by Ian Fitzpatrick.
 */
 
-$(document).ready(function() {
 
 	var caps = false;
 
@@ -17,13 +16,14 @@ $(document).ready(function() {
 	});
 
 	$(window).keyup(function(e) {
-		if (!stickyKeysEnabled) {
 			key = (e.keyCode) ? e.keyCode : e.which;
+			
+			
+			if (!($('#enableStickyKeys').is(':checked'))) {
+				$('.key.c' + key).removeClass('keydown');
 
-			$('.key.c' + key).removeClass('keydown');
-			if (key == 20) {
-				caps = (caps) ? false : true;
+				if (key == 20) {
+					caps = (caps) ? false : true;
+				}
 			}
-		}
 	});
-});
