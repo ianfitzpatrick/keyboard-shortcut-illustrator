@@ -1,6 +1,8 @@
 I couldn't find a simple way to do screenshots and animated gifs of shortcut
 combinations, so I adapated an adaption of the css-keyboard project.
 
+[Demo](http://ianfitzpatrick.com/shortcut-illustrator/)
+
 Authors:
 - [Dustin Cartwright](http://www.noxxten.com) - Primary CSS and HTML.
 - [Dustin Hoffman](http://www.breefield.com/) - Javascript to animate keypresses.
